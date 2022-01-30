@@ -171,6 +171,13 @@
                             <constraint firstItem="TIo-pw-j08" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="udP-5I-n3j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailsText" destination="BDr-ai-qwg" id="9P0-9O-NT0"/>
+                        <outlet property="flightNoLabel" destination="tnV-oW-myc" id="wPb-e4-Ock"/>
+                        <outlet property="flightScheduleLabel" destination="QBu-ui-5YH" id="6rC-I1-Ejt"/>
+                        <outlet property="patchImage" destination="LWM-F3-pS0" id="lxi-e0-nhj"/>
+                        <outlet property="statementLabel" destination="gOp-tX-N0T" id="twP-eQ-X2X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
