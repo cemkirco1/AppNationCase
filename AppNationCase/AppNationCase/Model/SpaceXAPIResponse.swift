@@ -34,6 +34,11 @@ struct SpaceXAPIResponse: Codable{
     var autoUpdate, tbd: Bool?
     var launchLibraryID, id: String?
     
+    enum CodingKeys: String, CodingKey {
+        case fairings, links, staticFireDateUTC, staticFireDateUnix, net, window, rocket, success, failures, details, crew, ships, capsules, payloads, launchpad, name, dateUnix, dateLocal, datePrecision,upcoming, cores, autoUpdate, tbd, launchLibraryID, id
+        case dateUTC = "date_utc"
+        case flightNumber = "flight_number"
+    }
     
 }
 
