@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ViewController: UIViewController {
 
@@ -42,6 +43,8 @@ class ViewController: UIViewController {
         }
         detailsText.text = viewModel.flightDetails?.details
         
+        let url = URL(string: "\(viewModel.flightDetails?.links?.patch?.small ?? "")")
+        patchImage.kf.setImage(with: url)
         
     }
 
